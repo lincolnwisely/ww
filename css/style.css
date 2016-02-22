@@ -1,5 +1,11 @@
 @import url('http://necolas.github.io/normalize.css/3.0.2/normalize.css');
 
+*, *:after, *:before {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ }
+
 h1 {
   font-family: 'Work Sans', serif;
   font-size: 60px;
@@ -45,6 +51,75 @@ footer {
 img:hover {
   opacity: 1.0;
 }
+
+
+
+/*#instafeed a {
+    padding: 10px;
+
+}*/
+
+/*#instafeed a {
+  padding:5px 5px 1px 5px;
+  margin:10px;
+  border:1px solid #e1e1e1;
+  display:inline-block;
+  border-radius: 4px;
+  position:relative;
+}*/
+
+#instafeed {
+ padding: 20px 20px 100px 20px;
+ max-width: 880px;
+ margin: 0 auto;
+ list-style: none;
+ text-align: center;
+ font-family:sans-serif;
+ }
+ #instafeed li {
+ display: inline-block;
+ width: 440px;
+ margin: 0;
+ padding: 20px;
+ text-align: left;
+ position: relative;
+ }
+ /*#instafeed div {
+ margin: 0;
+ position: relative;
+ }*/
+ #instafeed img {
+ max-width: 100%;
+ display: block;
+ position: relative;
+ z-index: 10;
+ -webkit-transition: -webkit-transform 0.4s;
+ -moz-transition: -moz-transform 0.4s;
+ transition: transform 0.4s;
+ }
+ #instafeed img:hover {
+ -webkit-transform: translateY(-120px);
+ -moz-transform: translateY(-120px);
+ -ms-transform: translateY(-120px);
+ transform: translateY(-120px);
+ }
+ #instafeed h3 {
+ width: 100%;
+font-family: 'Work Sans', serif;
+font-size: 14px;
+font-weight: 400;
+ display:block;
+ position: absolute;
+ margin:0;
+ top: 0;
+ left: 0;
+ padding: 30px;
+ background: #8d9cba;
+ color: #fff;
+ height: 120px;
+ top: auto;
+ bottom: 0;
+ }
 
 @media screen and (max-width: 1266px) {
 
