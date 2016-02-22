@@ -3,19 +3,42 @@
   <head>
     <title>Webber-Wisely | A Wedding Website</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
+<link href='https://fonts.googleapis.com/css?family=Work+Sans:200, 400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+ <link rel='shortcut icon' href='img/icon.ico' type='image/x-icon'/ >
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script type="text/javascript" src="scripts/instafeed.min.js"></script>
+
+ <script type="text/javascript">
+ var feed = new Instafeed ({
+   get: 'tagged',
+   tagName: 'webberwisely',
+   clientId: 'b2b2dc727a11425490e1582c9acd3a74'
+ });
+ feed.run();
+ </script>
+
+</head>
+ <body>
     <h1>Webber-Wisely</h1>
     <p>
-      October 2017
+      october 2017  |  portland, oregon
     </p>
-    <div class="container">
 
-      <!-- INSTANSIVE WIDGET -->
-      <script src="//instansive.com/widget/js/instansive.js"></script>
-        <iframe src="//instansive.com/widgets/364c655dc6fa532c8604afc94ce7110b.html" id="instansive_364c655dc6" name="instansive_364c655dc6"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+    <div class="container">
+      <img src="img/engaged.jpg">
     </div>
+
+    <div id="instafeed">
+
+    </div>
+    <footer>
+      <p>
+        more to come!
+      </p>
+    </footer>
+
   </body>
 
 </html>

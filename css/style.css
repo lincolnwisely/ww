@@ -1,15 +1,82 @@
+@import url('http://necolas.github.io/normalize.css/3.0.2/normalize.css');
+
 h1 {
-  font-family: 'Prata', serif;
+  font-family: 'Work Sans', serif;
   font-size: 60px;
   margin-top: 100px;
   text-align: center;
   color: #000;
+
 }
 
 p {
-  font-family: 'Prata', serif;
+  font-family: 'Work Sans', serif;
   font-size: 18px;
-  color: #a6a6a6;
+  color: gray;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
+  line-height: 1.5em;
+  font-weight: 400;
+
+}
+
+.container {
+  max-width: 880px;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+
+}
+
+.container img {
+  max-width: 880px;
+  width: 100%;
+  margin: 60px auto;
+  opacity: 0.85;
+}
+
+
+footer {
+  padding-top: 20px;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+
+@media screen and (max-width: 1266px) {
+
+    h1 {
+      font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    h1 {
+      font-size: 38px;
+      margin-top: 40px;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom:40px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+
+    }
+
+    .container img {
+      max-width: 880px;
+      width: 100%;
+      margin: 30px auto;
+      opacity: 1.0;
+    }
+
+    img:hover {
+      opacity: 1.0;
+    }
 }
