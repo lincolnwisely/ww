@@ -1,0 +1,134 @@
+/*
+* Custom variables
+*/
+$main-font: 'Work Sans', sans-serif;
+$sub-font: 'Work Sans', sans-serif;
+$fancy-font: 'Work Sans', sans-serif;
+$font-size: 16px;
+
+$black: #000;
+$white: #FFF;
+$grey: #585c65;
+$mediumgrey: #9b9b9b;
+$lightgrey: #eeeeee;
+$blue: #3466a1;
+
+$padding: 10px;
+$margin: 10px;
+
+/*
+* Override Bootstrap variables
+*/
+$font-family-sans-serif: $main-font;
+
+@import 'bootstrap';
+
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  color: $grey;
+  font-size: $font-size;
+  text-align: center;
+}
+
+header {
+  max-height: 300px;
+  height: 300px;
+  overflow: hidden;
+
+  h1 {
+  font-family: 'Work Sans', serif;
+  font-size: 60px;
+  margin-top: 100px;
+  text-align: center;
+  color: #000;
+
+  @media screen and (min-width: $screen-lg){
+        font-size: 60px;
+    }
+  }
+}
+
+p {
+  font-family: 'Work Sans', serif;
+  font-size: 18px;
+  color: gray;
+  text-align: center;
+  margin-bottom: 80px;
+  line-height: 1.5em;
+  font-weight: 400;
+
+}
+
+.main-image {
+   max-width: 880px;
+   width: 90%;
+   text-align: center;
+   margin: auto;
+   border-top: 2px solid;
+   border-bottom: 2px solid;
+
+
+}
+
+.container {
+  border-top: 1px;
+}
+
+
+.instagram-wrap {
+    background: $lightgrey;
+}
+
+.instagram-content {
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        padding: $padding*5 0;
+        color: darken($lightgrey, 20%);
+    }
+
+}
+
+.photo-box {
+        margin: 0 0 $margin*3 0;
+
+        .image-wrap {
+            img {
+                width: 100%;
+            }
+
+            .likes {
+                position: absolute;
+                bottom: 5px;
+                left: 15px;
+                padding: $padding/2;
+                background: $black;
+                background: rgba($black, 0.4);
+                color: $white;
+            }
+        }
+        .description {
+            font-family: $sub-font;
+            font-size: 12px;
+            background: $white;
+            color: $mediumgrey;
+            letter-spacing: 1px;
+            padding: $padding*1.5;
+            height: 75px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+footer {
+  padding-top: 40px;
+}
