@@ -1,88 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Webber-Wisely | A Wedding Website</title>
-     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="css/style.css">
-<link href='https://fonts.googleapis.com/css?family=Work+Sans:200, 400' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:200, 400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
- <link rel='shortcut icon' href='img/icon.ico' type='image/x-icon'/ >
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <script type="text/javascript" src="scripts/instafeed.min.js"></script>
+    <link rel='shortcut icon' href='img/icon.ico' type='image/x-icon' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="scripts/instafeed.min.js"></script>
 
- <script type="text/javascript">
-
-  var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'webberwisely',
-        clientId: 'f3003180731e4af8a6505a427acd764c',
-        accessToken: '22904349.f300318.c08d9c81a9e942bebc012c7b7f128e82',
-        links: true,
-        limit: 24,
-        sortBy: 'random',
-        resolution: 'standard_resolution',
-        template: '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="photo-box"><div class="image-wrap"><a href="{{link}}"><img src="{{image}}"></a><div class="likes">{{likes}} Likes</div></div><div class="description">{{caption}}<div class="date">{{model.date}}</div></div></div></div>'
-    });
-    feed.run();
-
-
-
-
- </script>
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            get: 'tagged',
+            tagName: 'webberwisely',
+            clientId: 'f3003180731e4af8a6505a427acd764c',
+            accessToken: '22904349.f300318.c08d9c81a9e942bebc012c7b7f128e82',
+            links: true,
+            limit: 24,
+            sortBy: 'random',
+            resolution: 'standard_resolution',
+            template: '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="photo-box"><div class="image-wrap"><a href="{{link}}"><img src="{{image}}"></a><div class="likes">{{likes}} Likes</div></div><div class="description">{{caption}}<div class="date">{{model.date}}</div></div></div></div>'
+        });
+        feed.run();
+    </script>
 
 </head>
- <body>
-  <header>
 
-    <h1>Webber-Wisely</h1>
-    <p>
-      october 2017  |  portland, oregon
-    </p>
-  </header>
+<body>
+    <header>
+
+        <h1>Webber-Wisely</h1>
+        <p>
+            march 2018 | saint louis, missouri
+        </p>
+    </header>
 
     <section class="instagram-wrap">
 
-      <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="instagram-content">
-                    <h2>LATEST PHOTOS</h2>
-                    <div class="row photos-wrap">
-                    <!-- Instafeed target div -->
-                    <div id="instafeed"></div>
-                    <!-- The following HTML will be our template inside instafeed -->
-                    <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="photo-box">
-                            <div class="image-wrap">
-                                <img src="images/test_img.jpg">
-                                <div class="likes">309 Likes</div>
-                            </div>
-                            <div class="description">
-                                Fantastic Architecture #architecture #testing
-                                <div class="date">September 16, 2014</div>
-                            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="instagram-content">
+                        <h2>LATEST PHOTOS</h2>
+                        <div class="row photos-wrap">
+                            <!-- Instafeed target div -->
+                            <div id="instafeed"></div>
+
                         </div>
-                    </div> -->
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
     <footer>
-      <p>
-        more to come!
-      </p>
+        <p>
+            more to come!
+        </p>
     </footer>
     <section class="footer-bottom">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-      <script type="text/javascript" src="scripts/bootstrap.js"></script>
-      <script type="text/javascript" src="scripts/instafeed.min.js"></script>
-      <script type="text/javascript" src="scripts/app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/bootstrap.js"></script>
+        <script type="text/javascript" src="scripts/instafeed.min.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
     </section>
 
-  </body>
+</body>
 
 </html>
